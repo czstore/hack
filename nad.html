@@ -1,0 +1,110 @@
+<html>
+<head>
+<link href="gaminggarage.css" rel="stylesheet">
+<title>WELCOME TO GAMING GARAGE!!!!</title>
+<body>
+<div class="container">
+<header>
+<div class="imageslide" style="max-width:1500px">
+  <img class="mySlides" src="slide1.jpg" style="width:100%">
+  <img class="mySlides" src="slide2.jpg" style="width:100%">
+  <img class="mySlides" src="slide3.jpg" style="width:100%">
+  <img class="mySlides" src="slide4.jpg" style="width:100%">
+  <img class="mySlides" src="slide.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</header>
+<nav>
+<ul>
+<li><a href="home.html">HOME</a></li>
+<li><a href="lb.html">LEADERBOARDS</a></li>
+<li><a href="v.html">VIDEOS</a></li>
+<li><a href="#">NEWS&UPADATES</a></li>
+<li><a href="f.html">FAQ's</a></li>
+<li><a href="au.html">ABOUT US</a></li>
+<li><a href="cu.html">CONTACT US</a></li>
+<ul>
+</nav>
+<article>
+<div class="wrapper">
+<div>
+<h1>NEWS & UPDTES</h1><br><br>
+'Critical Force', the developer of Critical Ops use to update Critical Ops game every month.<br><br>
+<h4>Current Version</h4><br>
+0.9.7<br>
+-Clan chat<br>
+-Party chat<br>
+-Profanity filter<br>
+-Brewery: visual and layout improvements<br>
+-More audio updates<br>
+<h4>UPDATES</h4><br>
+<h5>March 2018 0.9.8</h5><br>
+-Party matchmaking fixes and stability improvements for servers<br>
+-Improved weapon audio<br>
+-NEW ???<br>
+-Maximum size of shoot etc buttons is 17 % bigger<br>
+-Audio level adjustments<br><br>
+<h5>TBA 0.9.9</h5><br>
+-NEW ????????? and ???????<br>
+-Performance optimisation<br>
+-????? ??????<br>
+-?????? ?????<br>
+-NEW ???<br><br>
+
+</div>
+<div>
+<h5>These are the updates that are already aplied to the Critical Ops.<br><br>
+12.02.2018<br><br>
+
+Patch 0.9.7 notes<br><br>
+<img src="update1.jpg" width="50%"><br>
+
+
+Live now. Clan & Party chat, Brewery: visual and layout improvements, more audio updates, profanity filter, new operative accounts and other updates and fixes.<br><br>
+01.02.2018<br><br>
+
+Goodbye Operative!<br><br>
+<img src="update2.jpg" width="50%">
+
+
+No more OPERATIVE-XXXXXXXX accounts. New default account naming system.<br><br>
+26.01.2018<br><br>
+
+Premium cases<br><br>
+<img src="update3.jpg" width="50%"><br><br>
+
+
+Introducing new case type.<br><br>
+19.01.2018<br><br>
+
+Patch 0.9.6 notes<br><br>
+<img src="update4.jpg" width="50%"><br><br>
+
+
+Now available both Android and iOS. New game mode, re-added Headshot icon, Premium Cases & drop rates, new app icon, audio updates and other fixes.<br><br>
+</div>
+</div>
+</article>
+<footer>
+<div class="footer">
+Created & developed by Abdul Gani & Abhishek Yadav &copy
+</div>
+</footer>
+</body>
+</html>
