@@ -1,0 +1,99 @@
+<html>
+<head>
+<link href="gaminggarage.css" rel="stylesheet">
+<title>WELCOME TO GAMING GARAGE!!!!</title>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="imageslide" style="max-width:1500px">
+  <img class="mySlides" src="slide1.jpg" style="width:100%">
+  <img class="mySlides" src="slide2.jpg" style="width:100%">
+  <img class="mySlides" src="slide3.jpg" style="width:100%">
+  <img class="mySlides" src="slide4.jpg" style="width:100%">
+  <img class="mySlides" src="slide.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</header>
+<nav>
+<ul>
+<li><a href="#">HOME</a></li>
+<li><a href="lb.html">LEADERBOARDS</a></li>
+<li><a href="v.html">VIDEOS</a></li>
+<li><a href="nad.html">NEWS&UPADATES</a></li>
+<li><a href="f.html">FAQ's</a></li>
+<li><a href="au.html">ABOUT US</a></li>
+<li><a href="cu.html">CONTACT US</a></li>
+<ul>
+</nav>
+<article>
+<div class="wrapper">
+<div>
+<h1>WELCOME TO MY GAMING GARAGE</h1><br>
+<p> This website is developed for information purpose
+<h2>ABOUT CRITICAL OPS</h2>
+Critical Ops (commonly abbreviated as C-OPS) is a tactical first person shooter developed by Critical Force Entertainment and functions as the sequel and successor to Critical Strike Portable, which was released on August 14, 2015 on the browser version of Facebook[4], but then later moved to Facebook Gameroom on August 30, 2016. It was released on September 30, 2015 for Google Play.[5] The official release for the App Store had been soft launched for selected countries on May 2, 2016.[6] The game was also released on June 30, 2017 for Amazon.
+
+Like its predecessor, it is primarily based off the game mechanics of Counter Strike. However, Critical Ops has more detailed graphics, bigger maps and more weapons, along with the addition of weapon skins. The game currently has three selectable gamemodes, twenty two weapons and six maps available. Critical Ops will not include maps from other games such as Dust 2 from Counter Strike or any maps from Critical Strike Portable, but possibly will support community maps. Critical Force Entertainment seeks to add more gamemodes to the game, but will not give any dates as to exactly when they will be implemented.[7] The PC platform of Critical Ops was deactivated on July 10, 2017[8][1] claiming that it was taking huge amounts of resources and time for a fraction of the total amount of players and due to Critical Force's primary focus on mobile.[9]
+
+
+</div>
+<div>
+WEAPONS IN CRITICAL OPS<br>
+<dl>
+<dt>Pistols</dt>
+<dd>Dual MTX</dd>
+<dd>GSR 1911</dd>
+<dd>MR 96</dd>
+<dd>P250</dd>
+<dd>XD 45</dd>
+<dt>Submachine guns</dt>
+<dd>MP5</dd>
+<dd>MP7</dd>
+<dd>P90</dd>
+<dt>Assault Rifles</dt>
+<dd>AK-47</dd>
+<dd>AUG</dd>
+<dd>HK417</dd>
+<dd>M4</dd>
+<dd>SA58</dd>
+<dd>SG 551</dd>
+<dt>ShotGuns</dt>
+<dd>FP6</dd>
+<dd>SUPER 90</dd>
+<dt>Sniper Rifles</dt>
+<dd>M14</dd>
+<dd>URatio</dd>
+<dt>Melee</dt>
+<dd>Knife</dd>
+<dd>Kukri Knife</dd>
+<dd>Remix Knife</dd>
+<dd>Tac-Tool Knife</dd>
+</dl>
+</div>
+
+</div>
+</article>
+<footer>
+<div class="footer">
+Created & developed by Abdul Gani & Abhishek Yadav &copy
+</div>
+</footer>
+</body>
+</html>
