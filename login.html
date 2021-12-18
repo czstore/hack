@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+font-family: Arial, Helvetica, sans-serif;
+margin: 2% 20%;
+background-image: url(back.jpg);
+}
+form {
+border: 3px solid orange;
+background:transparent;
+box-shadow:1px 1px red;
+border-radius: 20px 50px;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background:linear-gradient(to bottom left,#F0F2F0,#000C40);
+    color: white;
+    padding: 14px 20px;
+    margin: 5px 200px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    
+}
+
+button:hover {
+   opacity: 0.8;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 30%;
+}
+
+.container {
+    padding: 16px;
+    background: transparent;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+
+</style>
+</head>
+<body>
+
+<h2 style="color:orange;text-shadow:1px 1px red;">PUBGM Login Page</h2>
+
+<form action="/action_page.php">
+  <div class="imgcontainer">
+    <img src="logo2.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    <button type="submit">Login</button></br>
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="cursor: pointer;"> Remember me
+    </label>
+  </div>
+</form>
+
+</body>
+</html>
