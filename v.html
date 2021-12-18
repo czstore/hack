@@ -1,0 +1,87 @@
+<html>
+<head>
+<link href="gaminggarage.css" rel="stylesheet">
+<title>WELCOME TO GAMING GARAGE!!!!</title>
+<body>
+<div class="container">
+<header>
+<div class="imageslide" style="max-width:1500px">
+  <img class="mySlides" src="slide1.jpg" style="width:100%">
+  <img class="mySlides" src="slide2.jpg" style="width:100%">
+  <img class="mySlides" src="slide3.jpg" style="width:100%">
+  <img class="mySlides" src="slide4.jpg" style="width:100%">
+  <img class="mySlides" src="slide.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</header>
+<nav>
+<ul>
+<li><a href="home.html">HOME</a></li>
+<li><a href="lb.html">LEADERBOARDS</a></li>
+<li><a href="#">VIDEOS</a></li>
+<li><a href="nad.html">NEWS&UPADATES</a></li>
+<li><a href="f.html">FAQ's</a></li>
+<li><a href="au.html">ABOUT US</a></li>
+<li><a href="cu.html">CONTACT US</a></li>
+<ul>
+</nav>
+<article>
+<div class="wrapper">
+<div>
+<h1>Here are some of our recent Videos</h1>
+1.Video On "TYPES IF PLAYERS IN CRITICAL OPS".
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8FkbhTwHfzg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><br>
+2.Video On "CRITICAL OPS || SNIPER MONTAGE#3(FLICKS,NOSCOPES,HARDSCOPE,QUIKSCOPE)".
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3KsNFYjWOy8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><br>
+3.Video On "CRITICAL OPS || AK47 VS SG551 || WHICH IS THE BEST GUN?".<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EdlVN9WZImU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><br>
+4.Video On"CRITICAL OPS|| SNIPER MONTAGE#2||NOSCOPES".<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/m7y6gkqrYSo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><br>
+5.Video On "CRITICAL OPS|| 1v5 CLUTCH ACE!!!!".<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6OoJ7pLQzzc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><br>
+6.Video On "CRITICAL OPS || SNIPER MONTAGE #1||NOSCOPES.".<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3w3DNG5Azfc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><br>
+7. Video On "Critical Ops ||Trying to kill players with knife || TDM #1".<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oLESXSLNt6I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><br>
+8.Video On "CRITICAL OPS|| M14 HEADSHOT MADNESS!!!!".<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5tmlJkR6u_s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe><br>
+</div>
+<div>
+You can also subscribe to the following channel.
+<marquee direction="up">1.ROOGHZ<br>
+2.IBENSK<BR>
+3.HUGI<br>
+4.FIRU<BR>
+5.ANGEL<br>
+6.ULSEMA<BR>
+7.ICHASE<BR>
+8.TALKTOMYHAND<BR>
+9.TEHGAN GAMING<BR>
+10.GIDU GAMER<BR>
+11.GEMOSAPHIENS<HR></marquee>
+</div>
+</div>
+</article>
+<footer>
+<div class="footer">
+Created & developed by Abdul Gani & Abhishek Yadav &copy
+</div>
+</footer>
+</body>
+</html>
