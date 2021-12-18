@@ -1,0 +1,64 @@
+<html>
+<head>
+<link href="gaminggarage.css" rel="stylesheet">
+<title>WELCOME TO GAMING GARAGE!!!!</title>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="imageslide" style="max-width:1500px">
+  <img class="mySlides" src="slide1.jpg" style="width:100%">
+  <img class="mySlides" src="slide2.jpg" style="width:100%">
+  <img class="mySlides" src="slide3.jpg" style="width:100%">
+  <img class="mySlides" src="slide4.jpg" style="width:100%">
+  <img class="mySlides" src="slide.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</header>
+<nav>
+<ul>
+<li><a href="home.html">HOME</a></li>
+<li><a href="lb.html">LEADERBOARDS</a></li>
+<li><a href="v.html">VIDEOS</a></li>
+<li><a href="#.html">NEWS&UPADATES</a></li>
+<li><a href="f.html">FAQ's</a></li>
+<li><a href="au.html">ABOUT US</a></li>
+<li><a href="cu.html">CONTACT US</a></li>
+<ul>
+</nav>
+<article>
+<div class="wrapper">
+<div>
+<h1>About Gaming Garage</h1><br>
+Well,Gaming Garage is developed & created by Abdul Gani & Abhishek Yadav.We also use to play Critical Ops.We are PRO player in this game.
+You can also send us a friend request in the Critical Ops.InGame-Name of  Abdul Gani & Abhishek Yadav are WBG2 & YADAV ABHI respectively.
+<br><br>
+We develop this website as a Mini-Project.
+</div>
+<div>
+</div>
+</div>
+</article>
+<footer>
+<div class="footer">
+Created & developed by Abdul Gani & Abhishek Yadav &copy
+</div>
+</footer>
+</body>
+</html>
