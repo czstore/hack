@@ -1,0 +1,83 @@
+<html>
+<head>
+<link href="gaminggarage.css" rel="stylesheet">
+<title>WELCOME TO GAMING GARAGE!!!!</title>
+<body>
+<div class="container">
+<header>
+<div class="imageslide" style="max-width:1500px">
+  <img class="mySlides" src="slide1.jpg" style="width:100%">
+  <img class="mySlides" src="slide2.jpg" style="width:100%">
+  <img class="mySlides" src="slide3.jpg" style="width:100%">
+  <img class="mySlides" src="slide4.jpg" style="width:100%">
+  <img class="mySlides" src="slide.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</header>
+<nav>
+<ul>
+<li><a href="home.html">HOME</a></li>
+<li><a href="#">LEADERBOARDS</a></li>
+<li><a href="V.html">VIDEOS</a></li>
+<li><a href="nad.html">NEWS&UPADATES</a></li>
+<li><a href="f.html">FAQ's</a></li>
+<li><a href="au.html">ABOUT US</a></li>
+<li><a href="cu.html">CONTACT US</a></li>
+<ul>
+</nav>
+<article>
+<div class="wrapper">
+<div>
+<h1>TOP PLAYERS</h1><br>
+<table cellpadding="10px" cellspacing="10px">
+<tr><th>#</th><th>Name</th><th>kill</th><th>death</th><th>assists</th></tr>
+<tr><td>01</td><td>6_bullet_bleezy</td><td>328013</td><td>232991</td><td>42564</td></tr>
+<tr><td>02</td><td>So TRASH server</td><td>310033</td><td>death</td><td>assists</td></tr>
+<tr><td>03</td><td>guyddsfsafsafsfssf</td><td>304322</td><td>death</td><td>assists</td></tr>
+<tr><td>04</td><td>guyddsfsafsafsfssf</td><td>299415</td><td>death</td><td>assists</td></tr>
+<tr><td>05</td><td>guyddsfsafsafsfssf</td><td>284366</td><td>death</td><td>assists</td></tr>
+<tr><td>06</td><td>guyddsfsafsafsfssf</td><td>274646</td><td>death</td><td>assists</td></tr>
+<tr><td>07</td><td>guyddsfsafsafsfssf</td><td>264576</td><td>death</td><td>assists</td></tr>
+<tr><td>08</td><td>guyddsfsafsafsfssf</td><td>258079</td><td>death</td><td>assists</td></tr>
+<tr><td>09</td><td>guyddsfsafsafsfssf</td><td>250081</td><td>death</td><td>assists</td></tr>
+<tr><td>10</td><td>WBG2</td><td>250080</td><td>death</td><td>assists</td></tr>
+<tr><td>11</td><td>guyddsfsafsafsfssf</td><td>250000</td><td>death</td><td>assists</td></tr>
+<tr><td>12</td><td>guyddsfsafsafsfssf</td><td>246647</td><td>death</td><td>assists</td></tr>
+<tr><td>13</td><td>guyddsfsafsafsfssf</td><td>kill</td><td>death</td><td>assists</td></tr>
+<tr><td>14</td><td>guyddsfsafsafsfssf</td><td>kill</td><td>death</td><td>assists</td></tr>
+<tr><td>15</td><td>guyddsfsafsafsfssf</td><td>kill</td><td>death</td><td>assists</td></tr>
+<tr><td>16</td><td>guyddsfsafsafsfssf</td><td>kill</td><td>death</td><td>assists</td></tr>
+<tr><td>17</td><td>guyddsfsafsafsfssf</td><td>kill</td><td>death</td><td>assists</td></tr>
+<tr><td>18</td><td>guyddsfsafsafsfssf</td><td>kill</td><td>death</td><td>assists</td></tr>
+<tr><td>19</td><td>guyddsfsafsafsfssf</td><td>kill</td><td>death</td><td>assists</td></tr>
+<tr><td>20</td><td>YADAV ABHISHEK</td><td>kill</td><td>death</td><td>assists</td></tr>
+</table>
+</div>
+<div>
+
+</div>
+</div>
+</article>
+<footer>
+<div class="footer">
+Created & developed by Abdul Gani & Abhishek Yadav &copy
+</div>
+</footer>
+</body>
+</html>
