@@ -1,0 +1,114 @@
+<html>
+<head>
+<link href="gaminggarage.css" rel="stylesheet">
+<title>WELCOME TO GAMING GARAGE!!!!</title>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    padding: 20px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="imageslide" style="max-width:1500px">
+  <img class="mySlides" src="slide1.jpg" style="width:100%">
+  <img class="mySlides" src="slide2.jpg" style="width:100%">
+  <img class="mySlides" src="slide3.jpg" style="width:100%">
+  <img class="mySlides" src="slide4.jpg" style="width:100%">
+  <img class="mySlides" src="slide.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</header>
+<nav>
+<ul>
+<li><a href="home.html">HOME</a></li>
+<li><a href="lb.html">LEADERBOARDS</a></li>
+<li><a href="v.html">VIDEOS</a></li>
+<li><a href="nad.html">NEWS&UPADATES</a></li>
+<li><a href="f.html">FAQ's</a></li>
+<li><a href="au.html">ABOUT US</a></li>
+<li><a href="#.html">CONTACT US</a></li>
+<ul>
+</nav>
+<article>
+<div class="wrapper">
+<div>
+<h1>CONTACT US</h1><br>
+<form action="cus.html">
+    <label for="fname">First Namse</label><br>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.."><br>
+
+    <label for="lname">Last Name</label><br>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br>
+
+    <label for="CITY">CITY</label>
+    <select id="CITY" name="CITY">
+      <option value="MUMBAI">MUMBAI</option>
+      <option value="DELHI">DELHI</option>
+      <option value="NAGPUR">NAGPUR</option>
+    </select><br>
+
+    <label for="subject">Subject</label><br>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+<div>
+ALTERNATE WAYS &darr;<br><br><br><br>
+PHONE:<br>9563833273<br>9352134434.<br><br><br><br>
+EMAIL ID:<br><a href="mailto:shkhabdulgani@gmail.com" class="mail">ABDUL GANI</a><br>
+<a href ="mailto:yadavabhi@gmail.com" class="mail">ABHISHEK</a>
+</div>
+</div>
+</article>
+<footer>
+<div class="footer">
+Created & developed by Abdul Gani  & Abhishek Yadav &copy
+</div>
+</footer>
+</body>
+</html>
